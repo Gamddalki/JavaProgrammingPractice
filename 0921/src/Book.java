@@ -1,31 +1,31 @@
 /*
- * ¼Ò½ºÆÄÀÏ: Book.java
- * ÀÌÈ­¿©´ë ÄÄÇ»ÅÍ°øÇÐÀü°ø 2071019 ±èÇÑ³ª
- * »ý¼ºÀÚ ¼±¾ð ¹× È°¿ë ¿¬½À
- * »ý¼ºÀÚ : °´Ã¼ »ý¼º ½Ã ÃÊ±âÈ­¸¦ À§ÇØ ½ÇÇàµÇ´Â ¸Þ¼Òµå
- * - »ý¼ºÀÚ ÀÌ¸§Àº Å¬·¡½º¸í°ú µ¿ÀÏ, ¸®ÅÏ Å¸ÀÔÀº ¾øÀ½ (Ãâ·Âx) : ¿À¹ö·Îµù(ÀÌ¸§ÀÌ µ¿ÀÏÇÑ »ý¼ºÀÚ ¿©·¯ °³ ÀÛ¼º °¡´É - ÀÔ·ÂÀÌ ´Ù¸§)
- * - °´Ã¼ »ý¼º ½Ã ¹Ýµå½Ã È£ÃâµÊ / ¹Ì ÀÛ¼º ½Ã ÄÄÆÄÀÏ·¯°¡ ÀÚµ¿À¸·Î ±âº» »ý¼ºÀÚ »ðÀÔ
+ * ì†ŒìŠ¤íŒŒì¼: Book.java
+ * ì´í™”ì—¬ëŒ€ ì»´í“¨í„°ê³µí•™ì „ê³µ 2071019 ê¹€í•œë‚˜
+ * ìƒì„±ìž ì„ ì–¸ ë° í™œìš© ì—°ìŠµ
+ * ìƒì„±ìž : ê°ì²´ ìƒì„± ì‹œ ì´ˆê¸°í™”ë¥¼ ìœ„í•´ ì‹¤í–‰ë˜ëŠ” ë©”ì†Œë“œ
+ * - ìƒì„±ìž ì´ë¦„ì€ í´ëž˜ìŠ¤ëª…ê³¼ ë™ì¼, ë¦¬í„´ íƒ€ìž…ì€ ì—†ìŒ (ì¶œë ¥x) : ì˜¤ë²„ë¡œë”©(ì´ë¦„ì´ ë™ì¼í•œ ìƒì„±ìž ì—¬ëŸ¬ ê°œ ìž‘ì„± ê°€ëŠ¥ - ìž…ë ¥ì´ ë‹¤ë¦„)
+ * - ê°ì²´ ìƒì„± ì‹œ ë°˜ë“œì‹œ í˜¸ì¶œë¨ / ë¯¸ ìž‘ì„± ì‹œ ì»´íŒŒì¼ëŸ¬ê°€ ìžë™ìœ¼ë¡œ ê¸°ë³¸ ìƒì„±ìž ì‚½ìž…
  */
 
 public class Book {
 	String title;
 	String author;
 	
-	public Book(String t) {					//»ý¼ºÀÚ
+	public Book(String t) {					//ìƒì„±ìž
 		title = t;
-		author = "ÀÛÀÚ¹Ì»ó";
+		author = "ìž‘ìžë¯¸ìƒ";
 	}
 	
-	public Book(String t, String a) {		//»ý¼ºÀÚ
+	public Book(String t, String a) {		//ìƒì„±ìž
 		title = t;
 		author = a;
 	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Book littlePrince = new Book("¾î¸°¿ÕÀÚ", "»ýÅØÁãÆä¸®");
-		Book loveStory = new Book("ÃáÇâÀü");
+		Book littlePrince = new Book("ì–´ë¦°ì™•ìž", "ìƒí…ì¥íŽ˜ë¦¬");
+		Book loveStory = new Book("ì¶˜í–¥ì „");
 		System.out.println(littlePrince.title + " " + littlePrince.author);
-		System.out.println(loveStory.title + " " + loveStory.author);			//Ãâ·Â
+		System.out.println(loveStory.title + " " + loveStory.author);			//ì¶œë ¥
 	}
 }
