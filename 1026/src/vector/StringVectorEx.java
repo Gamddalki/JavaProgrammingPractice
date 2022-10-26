@@ -5,8 +5,7 @@
  */
 
 package vector;
-import java.util.Vector;
-import java.util.Scanner;
+import java.util.*;
 
 public class StringVectorEx {
 
@@ -19,12 +18,6 @@ public class StringVectorEx {
 			System.out.print("이름을 입력하세요>>");
 			String s = scanner.nextLine();	//띄어쓰기 포함해 입력받기
 			v.add(s);			//키보드로부터 4개의 이름을 입력받아 요소로 삽입
-		}
-		
-		//모든 이름 출력
-		for(int i=0; i<v.size(); i++) {
-			String name = v.get(i);
-			System.out.print(name + " ");
 		}
 		
 		//가장 긴 이름 찾기
@@ -44,6 +37,18 @@ public class StringVectorEx {
 		//가장 긴 이름과 가장 짧은 이름 출력
 		System.out.println("\n\n가장 긴 이름은 : " + v.get(longestIndex));
 		System.out.println("가장 짧은 이름은 : " + v.get(shortestIndex));
+		
+		//모든 이름 출력
+		/*for(int i=0; i<v.size(); i++) {
+			String name = v.get(i);
+			System.out.print(name + " ");
+		}*/
+		Iterator<String> it = v.iterator();		//iterator를 이용해 모든 이름 출력하기
+		while(it.hasNext()) {
+			String s = it.next();
+			System.out.println(s);
+		}
+		
 	}
 
 }
