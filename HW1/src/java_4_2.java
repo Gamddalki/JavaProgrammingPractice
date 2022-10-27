@@ -2,6 +2,7 @@
  * 소스파일: java_4_2.java
  * 이화여대 컴퓨터공학전공 2071019 김한나
  * 간단한 클래스 만들기, scanner 활용
+ * p241 4장 2번
  */
 
 import java.util.Scanner;
