@@ -33,12 +33,12 @@ public class PhoneBook {		//예시와 같이 작동하는 PhoneBook 클래스
 		
 		System.out.print("인원수>>");
 		int num = scanner.nextInt();
-		Phone[] phone = new Phone[num];		//입력받은 인원수에 맞게 객체 배열 생성
+		Phone[] phone = new Phone[num];		//저장한 사람의 수를 입력받아 Phone 객체 배열 생성
 		for(int i=0; i<num; i++) {
 			System.out.print("이름과 전화번호(이름과 번호는 빈 칸없이 입력)>>");
 			String name = scanner.next();
 			String tel = scanner.next();
-			phone[i] = new Phone(name, tel);		//배열에 객체 요소 저장
+			phone[i] = new Phone(name, tel);		//배열에 객체 요소 저장(한 사람의 정보는 하나의 Phone 객체에 저장)
 		}
 		System.out.println("저장되었습니다...");
 		
@@ -53,11 +53,10 @@ public class PhoneBook {		//예시와 같이 작동하는 PhoneBook 클래스
 					break;			//번호가 있을 경우 번호 출력
 				}
 				if(i+1==num)
-					System.out.println(name + "이 없습니다.");		//없을 경우 없습니다 출력
+					System.out.println(name + " 이 없습니다.");		//없을 경우 없습니다 출력
 			}
 			
 		}
 		scanner.close();
 	}
-
 }

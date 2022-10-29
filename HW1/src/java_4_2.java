@@ -10,7 +10,7 @@ import java.util.Scanner;
 class Grade {		//Grade 클래스
 	private int math, science, english;
 	
-	public Grade(int math, int science, int english) {		//x,y,width,height을 매개변수로 받아 필드를 초기화하는 생성자
+	public Grade(int math, int science, int english) {		//math, science, english을 매개변수로 받아 필드를 초기화하는 생성자
 		this.math=math;
 		this.science=science;
 		this.english=english;
@@ -33,11 +33,9 @@ public class java_4_2 {
 		int math = scanner.nextInt();
 		int science = scanner.nextInt();
 		int english = scanner.nextInt();
-		
 		Grade me = new Grade(math, science, english);
 		System.out.println("평균은 " + me.average());
 		
 		scanner.close();
 	}
-
 }

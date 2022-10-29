@@ -80,5 +80,4 @@ public class DictionaryApp {
 		dic.delete("황기태");
 		System.out.println("황기태의 값은 " + dic.get("황기태"));
 	}
-
 }

@@ -1,5 +1,4 @@
 package o;
-
 /*
  * 소스파일: java_6_12.java
  * 이화여대 컴퓨터공학전공 2071019 김한나
@@ -60,8 +59,6 @@ public class java_6_12 {
 				System.out.println("아쉽군요!");						//아닐 경우 이어서 게임 진행
 			}
 		}
-		
 		scanner.close();
 	}
-
 }

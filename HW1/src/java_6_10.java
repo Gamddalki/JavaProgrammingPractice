@@ -60,8 +60,6 @@ public class java_6_10 {
 			}
 			System.out.println("아쉽군요!");						//아닐 경우 이어서 게임 진행
 		}
-		
 		scanner.close();
 	}
-
 }
