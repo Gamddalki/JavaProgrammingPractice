@@ -2,6 +2,10 @@
  * 소스파일: StringVectorEx.java
  * 이화여대 컴퓨터공학전공 2071019 김한나
  * 문자열 입력받아 Vector<String>에 저장해 길이 비교 후 출력
+ * - ArrayList 대신 Vector 사용 가능함
+ * 
+ * Iterator<E> : 컬렉션의 순차 검색을 위함
+ * - iterator 객체를 이용해 인덱스 없이 순차적 탐색이 가능
  */
 
 package vector;
