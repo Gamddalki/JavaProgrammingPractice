@@ -13,6 +13,7 @@ public class Reservation {
 			for(int j=0; j<3; j++) {
 				System.out.println("입력하세요: ");
 				
+				fout.write("0"+(j+1)+" ");
 				for(int i=0; i<4; i++) {
 						String input = scanner.nextLine();
 						fout.write(input, 0, input.length());
