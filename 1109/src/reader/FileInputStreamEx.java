@@ -12,7 +12,7 @@ public class FileInputStreamEx {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		byte b[] = new byte[6];
+		byte b[] = new byte[6];		//비어있는 바이트 배열
 		try {
 			FileInputStream fin = new FileInputStream("");
 			int n=0, c;
@@ -24,7 +24,7 @@ public class FileInputStreamEx {
 			for(int i=0; i<b.length; i++)
 				System.out.print(b[i] + " ");
 			System.out.println();
-			fin.close();
+			fin.close();		//스트림을 닫음 = 파일도 닫힘 = 더 이상 스트림으로부터 읽을 수 x
 		}
 		catch(IOException e) {
 			System.out.println("읽지 못했습니다.");
