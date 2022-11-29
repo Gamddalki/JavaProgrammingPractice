@@ -1,3 +1,21 @@
+/*
+ * 소스파일: CarEx.java
+ * 이화여대 컴퓨터공학전공 2071019 김한나
+ * 자동차 공장과 자동차 영업점 스레드
+ * 
+ * producer-consumer 문제
+ * - producer : 공유 메모리에 데이터를 공급
+ * - consumer : 공유 메모리의 데이터를 소비
+ * -> producer와 consumer가 동시에 공유 데이터에 접근하는 것이 문제
+ * 
+ * 동기화 객체 : 두 개 이상의 스레드 동기화에 사용되는 객체
+ * 동기화 메소드 : Object의 메소드임 (모든 객체가 동기화 객체가 될 수 있음 - Thread 객체 또한 포함)
+ * - wait() : 타 스레드가 notify()를 불러줄 때까지 대기
+ * - notify() : 대기중인 스레드를 깨워 RUNNABLE 상태로 만들어줌 (오직 하나의 스레드만 깨움)
+ * - notifyAll() : 대기중인 모든 스레드를 깨워 RUNNABLE 상태로 만들어줌
+ * -> synchronized 블록 내에서만 사용되어야 함
+ */
+
 import java.util.*;
 
 class sharedCars{
